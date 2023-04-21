@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+</head>
+<style>
+    body {
+        background-color: black;
+    }
+    .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+h1 {
+    color: white;
+    text-align: center;
+}
+p {
+    color: white;
+}
+h2{color: white;
+text-align: center;}
+h3 {
+    color: white;
+    text-align: center;
+}
+</style>
+<body>
+    <h1>Cross the Road </h1>
+    <img src="trible people.jpg.crdownload" class="center">
+    <p>If you decide to cross the river downstream, you'll come across a tribe of indigenous people. They're friendly and invite you to stay with them for a while. You learn that they know about the lost treasure, but they believe it belongs to the island and should not be taken by anyone. </p>
+    <h2> Choice A </h2>
+    <p>If you decide to take the treasure for yourself, you'll have to fight off the angry tribe members who see you as a thief. You manage to escape with the treasure, but you leave the island with a heavy heart and a sense of guilt for disrespecting the tribe's beliefs.</p>
+    <h3> Choice B </h3>
+    <p>If you decide to respect the wishes of the tribe, you'll return to the mainland empty-handed, but with a newfound respect for the people who call this island their home.</p>
+    <p>You have to choose any one option</p>
+    <button id="option1">Fight with them </button>
+    <button id="option2">Leave the treasure</button>
+
+    <div id="popup"></div>
+
+    <script>
+      const option1Button = document.getElementById("option1");
+      const option2Button = document.getElementById("option2");
+      const popup = document.getElementById("popup");
+
+      option1Button.addEventListener("click", function() {
+        window.open("./final.html", "_blank");
+  
+      });
+
+      option2Button.addEventListener("click", function() {
+        window.open("./index.html", "_blank");
+    
+
+      });
+
+    </script>
+</body>
+</html>

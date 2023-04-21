@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Interactive story </title>
+</head>
+<style>
+body { background-color: black;}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+h1{ 
+    text-align: center;
+    font-weight:bolder;
+    font-size: xx-large;
+    color: white;
+}
+p{ 
+    color: white;
+    text-align: center;
+    font-size: large;
+}
+h2 {
+ color: white;
+ text-align: center;
+ font-size: larger;
+}
+h3 {
+    color:white ;
+    text-align: center;
+}
+p1 { 
+    font-size: larger;
+    color: white;
+}
+</style>
+<body>
+    <h1>Scene 1</h1>
+    <p>As you make your way into the island, you come across a river.</p>
+    
+    <img src="waterfall.jpg" class="center">
+    <h2> Choice A </h2>
+    <p>If you choose to try to cross the river, you'll have to find a suitable place to do so. You search along the bank and finally find a spot where the water is shallow enough to wade across. However, as you make your way across, you slip on a rock and fall into the river. You manage to cling onto a branch that's hanging over the water, but now you're soaking wet, and your map is ruined.</p>
+    <h3> Choice B </h3>
+    <p>If you choose to follow the river, you come across a waterfall that's stunningly beautiful. The water cascades down from a height of about 30 feet, and you can see that there's a cave behind it. You have to decide whether to climb up to the top of the waterfall and see what's behind it or follow the river further downstream.</p>
+    <p1>You have to choose any one option</p1>
+    <button id="option1">Choose A</button>
+    <button id="option2">Choice B</button>
+
+    <div id="popup"></div>
+
+    <script>
+      const option1Button = document.getElementById("option1");
+      const option2Button = document.getElementById("option2");
+      const popup = document.getElementById("popup");
+
+      option1Button.addEventListener("click", function() {
+        window.open("./Choice a.html", "_blank");
+  
+      });
+
+      option2Button.addEventListener("click", function() {
+        window.open("./Choice b.html", "_blank");
+    
+
+      });
+
+    </script>
+</body>
+</html>
